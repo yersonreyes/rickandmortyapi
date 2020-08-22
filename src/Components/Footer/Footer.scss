@@ -1,0 +1,37 @@
+@import "../../Styles/globalstyles";
+.footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px 0px;
+
+  a {
+    list-style: none;
+    text-decoration: none;
+    margin-top: 5px;
+    color: $textcolor-secondary;
+    &:hover {
+      color: $textcolor-active;
+    }
+  }
+}
+
+.footer-list {
+  list-style: none;
+  display: flex;
+
+  li {
+    margin: 5px 20px;
+  }
+}
+
+.fab {
+  color: $textcolor-secondary;
+  &:hover {
+    color: $textcolor-active;
+  }
+}

@@ -1,0 +1,47 @@
+@import "../../Styles/globalstyles";
+
+.header {
+  height: 50px;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.header-img {
+  height: 50px;
+  width: 50px;
+}
+
+.header-list {
+  list-style: none;
+  display: flex;
+
+  li {
+    margin-left: 20px;
+  }
+}
+
+.header-nav {
+  font-size: 26px;
+  font-family: $fonttitle;
+  text-decoration: none;
+  &:hover {
+    color: $textcolor-active;
+  }
+}
+
+.selected {
+  color: $textcolor-active;
+}
+
+@media (max-width: 700px) {
+  .header {
+    flex-direction: column;
+    height: 80px;
+    margin-bottom: 10px;
+  }
+}

@@ -10,6 +10,7 @@ import Character from "./Pages/Character";
 import Location from "./Pages/Location";
 import Episode from "./Pages/Episode";
 import Home from "./Pages/Home";
+import CharacterId from "./Pages/CharacterId";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route exact path="/character" component={Character} />
           <Route exact path="/location" component={Location} />
           <Route exact path="/episode" component={Episode} />
+          <Route exact path="/character/:id" component={CharacterId} />
         </Switch>
         <Footer />
       </BrowserRouter>

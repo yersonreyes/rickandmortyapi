@@ -1,0 +1,18 @@
+@import "../../Styles/globalstyles";
+.button {
+  width: calc(100% - 40px);
+  text-decoration: none;
+  margin: 0 20px;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: $textcolor-secondary;
+  border-radius: 6px;
+  border: 2px solid $textcolor-active;
+
+  &:hover {
+    color: $textcolor-secondary;
+    background-color: $textcolor-active;
+  }
+}

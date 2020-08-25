@@ -1,0 +1,117 @@
+@import "../../Styles/globalstyles";
+
+.characterId {
+  width: calc(100% - 40px);
+  max-width: 1024px;
+  margin: 0 auto;
+  background-color: $backgroundcolor-card;
+  padding: 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  display: grid;
+
+  grid-template-columns: 400px 1fr;
+  grid-template-rows: 50px 280px 200px;
+
+  grid-template-areas:
+    "img appearances appearances"
+    "img episode episode"
+    "conten episode episode";
+}
+
+.character-img {
+  max-width: 306px;
+  border-radius: 10px;
+  grid-area: img;
+}
+
+.characterId-content {
+  max-width: 300px;
+  box-sizing: border-box;
+  padding: 10px;
+  grid-area: conten;
+
+  h3 {
+    font-family: $fonttitle;
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+  }
+}
+
+.characterId-list {
+  list-style: none;
+
+  li {
+    margin-bottom: 5px;
+
+    b {
+      min-width: 70px;
+      display: inline-block;
+      position: relative;
+      margin-right: 7px;
+
+      &:after {
+        content: ":";
+        position: absolute;
+        top: 0;
+        left: auto;
+        right: 0;
+      }
+    }
+  }
+}
+
+.appearances {
+  grid-area: appearances;
+  padding: 10px;
+  font-family: $fonttitle;
+  font-size: 26px;
+  letter-spacing: 3px;
+  margin-bottom: 5px;
+}
+
+.characterId-episode {
+  grid-area: episode;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.characterId-episode-item {
+  padding: 5px;
+  border-left: 3px solid $color-alive;
+
+  p {
+    margin-left: 10px;
+    margin-bottom: 5px;
+  }
+}
+
+.character-img__status {
+  border-radius: 10px;
+  border: 3px solid $color-dead;
+  object-fit: cover;
+}
+
+.alive-img {
+  border: 3px solid $color-alive;
+}
+
+.unknown-img {
+  border: 3px solid $color-unknown;
+}
+
+@media (max-width: 700px) {
+  .characterId {
+    margin: 0 auto;
+    background-color: $backgroundcolor-card;
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}

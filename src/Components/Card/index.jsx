@@ -25,7 +25,7 @@ export default function Card(props) {
         <p>{genero}</p>
       </div>
       <Link className="card-button" to={`/character/:${id}`}>
-        <p>Ver mas</p>
+        <p>More</p>
       </Link>
     </div>
   );

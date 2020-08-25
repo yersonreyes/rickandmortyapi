@@ -57,7 +57,10 @@
     padding-left: 20px;
 
     &:before {
+      height: 3px;
       top: -11px;
+      left: 6px;
+      width: 14px;
     }
   }
 }

@@ -2,11 +2,12 @@
 
 .home {
   max-width: 100%;
-  height: calc(100vh - 250px);
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 30px;
 }
 .home-img {
   display: block;

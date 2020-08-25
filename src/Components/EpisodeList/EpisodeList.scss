@@ -1,0 +1,63 @@
+@import "../../Styles/globalstyles";
+.episodes-list-item {
+  display: flex;
+  margin-top: 30px;
+}
+
+.episodes-list-date {
+  align-self: flex-start;
+  flex: 0 0 220px;
+  max-width: 220px;
+  padding-left: 20px;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: -12px;
+    top: 6px;
+    height: 15px;
+    width: 15px;
+    border-radius: 100px;
+    background: $textcolor-active;
+    border: 3px solid $color-alive;
+  }
+
+  h6 {
+    font-size: 1.04rem;
+    line-height: 1.657rem;
+  }
+}
+
+.episodes-list-content {
+  padding-left: 50px;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 15px;
+    height: 1px;
+    width: 30px;
+    background: $color-alive;
+  }
+}
+
+@media (max-width: 650px) {
+  .episodes-list-item {
+    flex-direction: column;
+  }
+
+  .episodes-list-date {
+    flex: 0;
+  }
+
+  .episodes-list-content {
+    padding-left: 20px;
+
+    &:before {
+      top: -11px;
+    }
+  }
+}

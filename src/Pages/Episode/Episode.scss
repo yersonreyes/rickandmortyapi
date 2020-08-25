@@ -1,0 +1,31 @@
+@import "../../Styles/globalstyles";
+
+.episodes {
+  width: calc(100% - 60px);
+  max-width: 1024px;
+  padding: 0 30px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  h2 {
+    margin-top: 50px;
+    font-size: 34px;
+    font-family: $fonttitle;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    color: $textcolor-active;
+  }
+}
+
+.episode-list {
+  border-left: 3px solid $color-alive;
+}
+
+.button-episode-list {
+  margin-top: 50px;
+  width: 100%;
+  max-width: 700px;
+}

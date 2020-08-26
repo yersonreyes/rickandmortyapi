@@ -1,3 +1,4 @@
+@import "../../Styles/globalstyles";
 .character {
   max-width: 1024px;
   margin: 0 auto;
@@ -13,6 +14,47 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
   justify-content: center;
+}
+
+.filter {
+  width: calc(100% - 60px);
+  max-width: 1024px;
+  box-sizing: border-box;
+}
+
+.filter-form {
+  width: calc(100% - 60px);
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.filter-form-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+
+  label {
+    margin-right: 10px;
+    font-family: $fonttitle;
+    font-size: 20px;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+  }
+
+  input {
+    display: flex;
+    margin-right: 10px;
+    border-radius: 10px;
+    padding: 3px;
+    color: $textcolor-active;
+    background-color: $backgroundcolor-card;
+    font-size: 20px;
+    align-items: center;
+  }
 }
 
 @media (max-width: 1020px) {
